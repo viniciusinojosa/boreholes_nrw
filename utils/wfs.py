@@ -73,7 +73,7 @@ def parse_borehole_layers(feature_id: str) -> pd.DataFrame:
         "outputFormat": "text/xml",
     }
 
-    response = requests.get(BML_BASE_URL, params=params, timeout=30)
+    response = requests.get(BML_BASE_URL, params=params, timeout=90)
     response.raise_for_status()
     root = ET.fromstring(response.content)
 
