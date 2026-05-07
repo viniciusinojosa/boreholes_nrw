@@ -89,7 +89,5 @@ The current WFS query uses the **bounding box** of the WKT polygon or shapefile,
 ## Data source
 
 The workflow accesses NRW BoreholeML/WFS services related to the public borehole portal:
-
 - https://www.bohrungen.nrw.de/
-- https://www.bml3.nrw.de/service/bmlh
-- https://www.bml3.nrw.de/service/bml
+
