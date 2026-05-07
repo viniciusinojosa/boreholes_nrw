@@ -55,22 +55,21 @@ pip install -r requirements.txt
 ## Example usage with WKT
 
 ```bash
-python borehole_3d.py \
-  --wkt "POLYGON ((7.210851 51.486534, 7.217041 51.486534, 7.217041 51.488618, 7.210851 51.488618, 7.210851 51.486534))" \
-  --step 0.1 \
-  --color-column rock_name \
-  --output-gpkg borehole_layers_3d.gpkg \
+python borehole_3d.py ^
+  --wkt "POLYGON ((7.210851 51.486534, 7.217041 51.486534, 7.217041 51.488618, 7.210851 51.488618, 7.210851 51.486534))" ^
+  --step 0.1 ^
+  --color-column rock_name ^
+  --output-gpkg borehole_layers_3d.gpkg ^
   --output-html boreholes_3d.html
-```
 
 ## Example usage with shapefile
 
 ```bash
-python borehole_3d.py \
-  --shapefile-path "aoi.shp" \
-  --step 0.1 \
-  --color-column rock_name \
-  --output-gpkg borehole_layers_3d.gpkg \
+python borehole_3d.py ^
+  --shapefile-path "aoi.shp" ^
+  --step 0.1 ^
+  --color-column rock_name ^
+  --output-gpkg borehole_layers_3d.gpkg ^
   --output-html boreholes_3d.html
 ```
 
@@ -89,5 +88,6 @@ The current WFS query uses the **bounding box** of the WKT polygon or shapefile,
 ## Data source
 
 The workflow accesses NRW BoreholeML/WFS services related to the public borehole portal:
+
 - https://www.bohrungen.nrw.de/
 
