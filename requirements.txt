@@ -1,8 +1,0 @@
-requests
-geopandas
-shapely
-pandas
-numpy
-plotly
-lxml
-pyogrio
