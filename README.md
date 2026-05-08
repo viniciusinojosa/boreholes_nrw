@@ -80,6 +80,10 @@ The shapefile must have a valid coordinate reference system. If the shapefile is
 - `borehole_headers.gml`: raw downloaded borehole header features
 - `borehole_layers_3d.gpkg`: processed fixed-depth borehole layer points
 - `boreholes_3d.html`: interactive 3D Plotly visualisation
+  
+<p align="center">
+  <img src="figures/example_3d_plot.png" alt="Example 3D borehole stratigraphy viewer" width="800">
+</p>
 
 ## Important note
 
