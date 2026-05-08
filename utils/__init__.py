@@ -8,7 +8,7 @@ from .geometry import (
 )
 from .wfs import download_all_layers, download_borehole_headers, parse_borehole_layers
 from .processing import build_3d_geodataframe, expand_layers_to_fixed_grid
-from .plotting import create_3d_plot
+from .plotting import create_3d_plot,save_3d_plot
 
 __all__ = [
     "bbox_from_area_input",
