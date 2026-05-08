@@ -13,7 +13,7 @@ python borehole_3d.py ^
 
 Using a shapefile/vector file:
 python borehole_3d.py ^
-  --shapefile-path "aoi_2.shp" ^
+  --shapefile-path "aoi.shp" ^
   --step 0.1 ^
   --color-column rock_name ^
   --output-gpkg borehole_layers_3d.gpkg ^
