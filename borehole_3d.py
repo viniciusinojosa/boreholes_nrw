@@ -24,12 +24,12 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
-
 from utils import (
     build_3d_geodataframe,
     create_3d_plot,
     download_all_layers,
     download_borehole_headers,
+    save_3d_plot
 )
 
 
@@ -123,9 +123,16 @@ def main() -> None:
     gdf3d.to_file(args.output_gpkg, driver="GPKG")
     print(f"Saved processed GeoPackage: {args.output_gpkg}")
 
-    fig = create_3d_plot(gdf3d, color_column=args.color_column)
-    fig.write_html(args.output_html, auto_open=False)
-    print(f"Saved 3D plot: {args.output_html}")
+    fig = create_3d_plot(
+        gdf3d,
+        color_column=args.color_column,
+        max_points=100_000,
+    )
+    
+    save_3d_plot(
+        fig,
+        output_html=args.output_html,
+    )
 
 
 if __name__ == "__main__":
